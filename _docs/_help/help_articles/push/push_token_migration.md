@@ -32,11 +32,11 @@ To do this, use the `users/track` endpoint and post the following information:
 "attributes" : [
     {
       "push_token_import" : true,
-      "push_tokens": [
-          "app_id": ""
-          "token": ""
-          "device_id": ""
-      ]
+      "push_tokens": [{
+          "app_id": "APP_ID_OF_OS",
+          "token": "PUSH_TOKEN_STRING",
+          "device_id": "DEVICE_ID"
+      }]
     }
 ]
 ```
@@ -52,11 +52,11 @@ Example:
       "country": "US",
       "language": "en",
       "YOUR_CUSTOM_ATTRIBUTE": "YOUR_VALUE",
-      "push_tokens": [
-          "app_id": "APP_ID_OF_OS"
-          "token": "PUSH_TOKEN_STRING"
+      "push_tokens": [{
+          "app_id": "APP_ID_OF_OS",
+          "token": "PUSH_TOKEN_STRING",
           "device_id": "DEVICE_ID"
-      ]
+      }]
     },
     {
       "push_token_import" : true,
@@ -65,11 +65,11 @@ Example:
       "language": "en",
       "YOUR_CUSTOM_ATTRIBUTE_1": "YOUR_VALUE",
       "YOUR_CUSTOM_ATTRIBUTE_2": "YOUR_VALUE",
-      "push_tokens": [
-          "app_id": "APP_ID_OF_OS"
-          "token": "PUSH_TOKEN_STRING"
+      "push_tokens": [{
+          "app_id": "APP_ID_OF_OS",
+          "token": "PUSH_TOKEN_STRING",
           "device_id": "DEVICE_ID"
-      ]
+      }]
     }
 ]
 ```
